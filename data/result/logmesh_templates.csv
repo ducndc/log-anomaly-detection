@@ -1,81 +1,132 @@
 EventId,EventTemplate,Occurrences
-f73f46e9,new client mac <*> created on bss <*>,408
-734480a4,"<*> Channel <*> is Overload: Avg CU=<*> > CU OL threshold=<*>, CU Sum=<*> for <*> samples",59
-25589ad0,<*> Associated radio channel <*> is not overload yet,1013
-c32ea2b3,<*> channel utils monitor: <*>,98
-42934e80,<*> Channel = <*> is OL,2797
-35c7b081,delete <*> in assoc_clients,195
-188d7d34,client <*> leave bssid <*>,194
-7b5e1cd2,<*> Got remote client LEAVE notific for client <*> that has not left a local/remote bss <*>,258
-2d662a75,drop <*> <*> msgtype=0x<*>,3243
-36adfe94,Deleted assoc_client: <*> from dev: <*>,255
-8bdb86ee,cli (<*>) <*> join <*> BSS <*>,464
-b3e00c7f,remove <*> in <*>,145
-8d1d00ed,Got remote client JOIN notific for client <*> at bss <*> that has not left a local/remote bss <*>,92
-8b0bff7d,client <*> Stale <*> leave <*> (curr bss <*>,92
-df18c1e5,parse_cmdu_message fail,2419
-0c0d7679,Idx:<*> <*> RSSI:<*> pkt cnt:<*>,765
-f1184ac6,"<*> cli (<*>) <*> candidate bss <*> target score <*>, current Score <*>, airmon rssi <*>, estimated rate <*>, uplink rate <*>, hop count <*>, target rssi <*>, curr score TH <*>, curr rssi -<*>",51
-55e56737,"<*> Build Steer Request to Agent <*> <*> <*> bss_cnt <*>, operating class=<*>, channel=<*>",145
-d1e0a7a8,- hexdump(len=<*>): <*> 0b 2a f1 ba <*> a3 <*> <*> <*> <*> <*> <*> <*> <*> 3a,1
-3eb580e4,<*> Client(<*>) <*> Trigger = <*>,468
-b78a17b6,Client (<*>) <*> has been steered <*> <*>,200
-d5c1bbc9,insert assoc_client <*> in <*>,198
-104250db,Got local join for client <*> at bss <*> that has not left me/remote BSS <*>,94
-a79ab087,Delayed remote topology notification... cli (<*>) <*> is already connected to us--ignore,203
-409a28b1,send_air_monitor_response_check Monitor Result For Ind <*> reference <*>,622
-6d3c53ec,<*> assoc cli <*> invalid ul rssi <*>,20
-45c81714,"<*> cli (<*>) <*> candidate bss <*> target score <*>, current score <*>, 11k rssi <*>, estimated rate <*>, uplink rate <*>, hop count <*>, target rssi <*>, current_score_th <*>, curr rssi -<*>",59
-c514dc55,"<*> Send BTM Request to STA (<*>) <*> Target bss <*> channel <*>, opclass <*>",55
-d721f9a5,<*> Recv BTM Response STA: <*> Target: <*> status(<*>),114
-38f0f100,<*> cli (<*>) <*> update channel=<*> at band <*> without probe request,11
-902a7155,resend_message Unassoc STA Link Metrics Query to rax3 <*> premid=<*> retry_cnt_left=<*>,154
-53b8dc98,<*> client <*> <*> on <*> is a <*> candidate,117
-9a2136ff,<*> cli <*> rssi <*> > <*> still good now -> continue to steer,5
-2fba6b9b,<*> cli <*> Air mon failed..no reports,139
-1f117301,resend_message Beacon Metrics Query to rax3 <*> premid=<*> retry_cnt_left=<*>,51
-a4993dc6,Assoc for a client that has not been seen yet <*>,2
-9f95c47b,"cli (<*>) <*> current sp_streams=<*>, new sp_streams=<*>",30
-bfafdea5,<*> **** No Alternative BSSs(overloaded bss / ESS mismatch / chan not supp ****,3
-1be152f7,Remote client LEAVE notific for a client that has not been seen yet <*>,4
-aab1bbb2,"<*> No suitable BSS found, going to the idle state",6
-e0e0c815,Remote JOIN client notific for a client that has not been seen yet <*>,21
-8455f1b2,Trigger Channel ID on Channel <*> for <*>,34
-ff93bef8,update ch(<*>) for cli_id:<*>,14
-17b55832,<*> supported client bands <*>,27
-f2f57324,<*> for client <*> Candidate BSS is NULL,5
-620332a8,resend_message Map Policy Config Request to rax3 <*> premid=<*> retry_cnt_left=<*>,5
-34dff5ba,resend_message Client Assoc Control Request to rax3 <*> premid=<*> retry_cnt_left=<*>,37
-60e69528,"Uinitialized radio, continuing",12
-5434ba6f,cli has already left current <*>,3
-410d1073,Invalid trigger (<*>) CHAN_MEASUREMENT_COMPLETE,13
-c63b05ca,resend_message Combined Infrastructure Metrics to rax3 <*> premid=<*> retry_cnt_left=<*>,5
-4e0103ac,"Send Sta Cap Query message to device <*>:0b:2a:f1:ba:<*>, client fa:<*>:<*>:<*>:0c:e<*>",1
-2120bc99,"cli fa:<*>:<*>:<*>:0c:e8 hasn't been updated: bssid <*>:<*>:<*>:<*>:<*>:<*>, current_chan <*>",1
-d97ad499,received sta fa:<*>:<*>:<*>:0c:e8 at bssid <*>:0b:2a:d1:ba:<*> capability report message,1
-d9beb5c2,"<*> Accomadate Target Client <*> on BSS <*> 11k rssi <*> with Chan_util=<*>, EstAirTime=<*>, SafetyTh=<*>",7
-e38b04c2,"cli (<*>) <*> does not 11k report on own bss, rssi_uplink=-<*>",14
-7c3ef6db,insert sta(de:<*>:ca:b1:ca:<*>) in bss(<*>:0b:2a:cf:e9:<*>),1
-fefcd600,associated client <*> found in bss <*> update associated client,5
-5c1599a4,target_bssid is invalid:<*>:<*>:<*>:<*>:<*>:<*>,1
-52b5dc13,- hexdump(len=<*>): <*> 0b 2a f1 ba <*> a3 <*> <*> <*> <*> <*> 9b 7e d0 c<*>,1
-5da8313f,- hexdump(len=<*>): <*> 0b 2a <*> <*> <*> a3 <*> <*> <*> 2e b2 <*> b1 c0 c<*>,4
-2be73937,"<*> Cannot accomadate Target Client f2:<*>:<*>:<*>:0e:<*> on BSS <*>:0b:2a:cf:e9:<*> 11k rssi <*> with Chan_util=<*>, EstAirTime=<*>, SafetyTh=<*>",1
-2731cdb2,cli (<*>) <*> supports new channel <*>,4
-a393c391,- hexdump(len=<*>): <*> 0b 2a f1 ba <*> a3 <*> <*> <*> be a9 <*> e5 b6 <*>,1
-a45ef584,<*> Invalid Trigger (<*>) AUTH_DENY_MAX_REACHED,1
-874aa721,- hexdump(len=<*>): <*> 0b 2a bf e9 c4 a3 <*> <*> <*> <*> <*> 4b b5 da <*>,1
-d418f05c,- hexdump(len=<*>): <*> 0b 2a f1 ba <*> a3 <*> <*> <*> 0a <*> a3 9a <*> <*>,2
-ecd47895,- hexdump(len=<*>): <*> 0b 2a bf e9 c4 a3 <*> <*> <*> <*> cd 2d 0c 2d <*>,1
-281b79f1,- hexdump(len=<*>): <*> 0b 2a bf e9 c4 a3 <*> <*> <*> ce c8 9d <*> c5 1e,1
-f77af5c1,- hexdump(len=<*>): <*> 0b 2a f1 ba <*> a3 <*> <*> <*> <*> <*> 4b b5 da <*>,1
-21b81dec,- hexdump(len=<*>): <*> 0b 2a <*> <*> <*> a3 <*> <*> <*> 2a 4f 4c <*> 7a <*>,3
+c2c60cf7,invalid radio_idx!,9302
+2ce30279,insert <*> in <*>,190
+599db117,cli <*> hasn't been updated: bssid <*> current_chan <*>,251
+6d3c53ec,<*> assoc cli <*> invalid ul rssi <*>,6023
+410d1073,Invalid trigger (<*>) CHAN_MEASUREMENT_COMPLETE,286
+bfafdea5,<*> **** No Alternative BSSs(overloaded bss / ESS mismatch / chan not supp ****,286
+b0b1d00b,<*> timeout!!! no discovery in db; del <*>,12
+24e524f6,<*> mark <*> valid,57
+953038c2,<*> reset <*> config states,67
+898cc7c4,agent <*> not in topology; delete,41
+4d8c1502,<*> reset on all radio,150
+2ca40681,no pending task,150
+c21968a3,inform local wifi APCLI <*>,23
+76e90874,1905 al mac: <*>,12
+f29040d3,<*> <*>tx multicast discovery on rax3 for downstream MAP agent,14
+c4fd4295,due to new dev connect restart ch planning,74
+7f9f4c03,create operational <*> <*>,17
+869ea45f,Remove uplink_bh from: <*>,20
+13fa1ea0,"<*> iface->is_map_if=<*>, iface_radio->uplink_bh_present=<*>",20
+18076c54,<*> no enough bss info for band=<*>! not add extra m2 now,230
+685a07e8,<*>(<*>): ptk size < <*>,16
+6a6b13a8,wait for event <*> timeout,14
+6090fec0,receive <*> <*> fail,16
+a26ff2b1,failed to get interface,28
+6f6193a8,Wifi Radio not present on remote device,20
+d7b40029,BH Entry NULL,70
+4fea83fc,RSSI not valid (RSSI=<*>),120
+88597f1c,"Input invalid estimate rate:<*>, uplink rate: <*>",228
+0b056294,<*>(<*>): cli <*> ptk size <= <*>,218
+21b05c49,Auth Rej for client <*> not in DB,30
+f2f57324,<*> for client <*> Candidate BSS is NULL,132
+1bcace46,<*> client mac <*> info is null,357
+bc6303b6,<*> own device is NULL,30
+ceaceea1,<*> client db entry for <*> not found,2791
+aab1bbb2,"<*> No suitable BSS found, going to the idle state",65
+085a4b15,<*> curr_dev is null,190
+54fa220a,Not found sta <*> at bssid <*>,5
+e1c0761d,update <*> in bss(<*>:0b:2a:cf:e9:<*>),7
+415be5ba,mapd_add_client_to_bss_assoc_list: Assoc for already associated,1
+6e8623b3,wlan_client 7a:f3:d2:ca:ce:<*> stale dis-connect event from (<*>:0b:2a:cf:e9:<*>),1
+80a1bfc0,<*> client dev is NULL,149
+c153364c,"<*> No suitable BSS found, cli <*> going to the idle state",9
+0d82af99,<*> tx multicast <*> with vs tlv on eth<*>,10
+8986c740,"nr_peer_btm_query_action: query_len <*> , nrlist.CurrListNum <*>",6
+59ab496f,"nr_peer_btm_query_action: query_reason <*> , suppose to be <*>...",6
+8c667ab0,nr_peer_btm_query_action: unrecognized sub-element ID <*> ...,6
+77d2c1ff,"mbo_make_mbo_ie_for_btm no need to add, return.",6
+220dac77,should have never happened,13
+fe4227ed,error ap metrics tlv,13
+9f22278f,failed to parse resp msg,13
+c3712231,something wrong: not found assoc_client <*> at bss <*>,4
+2c61910e,invalid almac(<*>:0b:2a:f1:ba:<*>),83
+13a0d736,invalid almac(<*>:0b:2a:bf:e9:<*>),45
+89019dca,<*> Channel <*> is present in operating list,14
+cb8cee3c,<*> remove radio from the list,14
+1d2d4039,invalid almac(<*>:0b:2a:bf:e9:c4),7
+8d2b6ff2,No more room to accomodate <*> that has joined a BSS on another device,39
+a9c401f8,invalid param dev null or dev->in_network (<*>)!!!,5
+7329139c,"cont_radio_cnt <*>, dev_radio_cnt <*>",13
+ad72d61f,radio mapping pending for CLI interface <*>,7
+aa45c977,IFace Radio is NULL,5
+108ecbec,topo server doesn't have <*> with <*>,38
+30fc5842,error tx link metrics tlv,38
+c17026e0,connected(<*>:0b:2a:ff:e9:c5) n_iface(2e:0b:2a:bf:e9:<*>),10
+647c49fc,connected(2e:0b:2a:bf:e9:<*>) n_iface(<*>:0b:2a:ff:e9:c5),11
+2d662a75,drop <*> <*> msgtype=0x<*>,49
+080ecf98,config push to <*>,46
+60e69528,"Uinitialized radio, continuing",124
+5434ba6f,cli has already left current <*>,31
+769bc1d3,"<*> Cannot accomadate Target Client <*> on BSS <*> 11k rssi <*> with Chan_util=<*>, EstAirTime=<*>, SafetyTh=<*>",7
+481bcd84,netlink: recvfrom failed: No buffer space available,2
+41489205,<*> Invalid Trigger (<*>) <*>,14
+9bcb57f5,<*> bssid does not belongs to map,87
+e82b9fc8,"receive new send tlv, replace old one(<*>)",10
+df18c1e5,parse_cmdu_message fail,9
+5c1599a4,target_bssid is invalid:<*>:<*>:<*>:<*>:<*>:<*>,8
+78d1cddf,No associated client found,2
+ba7c200c,"cli has already connect to target bssid, bs case26:0b:2a:cf:e9:<*>",15
+cf98b07a,"Sanity Check Fail! Err Flag:(<*>), smac:(<*>:0b:2a:bf:e9:<*>), mtype:(0x800e), mid:(0x2170), tlv_total_len:(0x0026)",1
+50baefff,<*> <*>receive discovery(<*>:0b:2a:bf:e9:c4) peer intf(2e:0b:2a:bf:e9:c5),1
+09ef4625,connected(2e:0b:2a:bf:e9:c5) n_iface(<*>:0b:2a:ff:e9:<*>),2
+52edb3b4,<*>wait for event timeout,2
+abde7035,driver_wext_get_oid: <*> len (<*>) failed,13
+37a9c3a1,get param(Enable_WPS_toggle_5GL_5GH) fail,3
+9ca7484e,get param(MaxStaAllowed) fail,3
+79f98c73,hessid_len is not six,5
+6c988de0,wapp_set_interworking_enable,5
+cb7433c3,driver_wext_set_oid: <*> len (<*>) failed,6
+908d7d4d,Initial hotspot function retrun type error,3
+609435a2,get param(DppOnboardType) fail,3
+d6161ed1,get param(DfsSlaveEn) fail,3
+dd964694,write error,3
+ad4f5b62,hotspot_deinit,2
+cd667c89,iapp> IOCTL <*> to wlan <*> failed!,12
+8687fcfe,br mac addr <*>:0b:2a:bf:e9:<*>,1
+d80b5b4f,alloc <*> sock_buf :<*>!,2
+ddf97d71,use default cpu port(<*>),1
+59b19fa8,<*>[0mfailed to reg match,2
+140fabed,no netAccessKey specified,1
+26718bfe,no CsignKey specified,1
+c75d07b8,no connector specified,1
+bbceba42,GTK rekey timer <*>,1
+8bde6fee,"notify <*> change recv buffer size msg fail, drop msg (type:<*>)",1
+5aed28f9,"<*> root leaf not exist, could not update topology tree",4
+5289ff82,switch data not found by port index(<*>),2
+b3eb34c1,Number of clients read from DB file =<*>,1
+e13343e5,topo_srv_init_own_<*>_info,1
+89824e58,peer_radio not found corresponding to identifier,1
+e8f9026d,radio <*> orignal_bw(<*>) opclass(<*>) ch(<*>),2
+1c44c3f0,mapd_get_channel_scan_capab_from_driver <*>: 2G,1
+29872dd9,map_build_cac_cap <*>,1
+6f6c9e27,------------->,1
+e3e10769,create operational <*> ssid=VHT KEANGNAM,12
+654eb92d,create operational <*> ssid=VHT KEANGNAM <*>,12
+17b85f66,map_<*>_Set_Read_Bss_Conf_and_Renew,1
+244b3957,input len is less,5
+b1660f1e,"<*> LIB_<*>_READ_BSS_CONF_AND_RENEW, local:<*>, version:<*>",1
+9a28bd57,set hidden_ssid: ifname = <*> hidessid = <*>,5
+6be56b9e,<*> <*> not found in MAP dev list,8
+f2ffe156,<*> create new radio <*> parent device = <*>,8
+396f2943,Send Sta Cap Query message to device <*> client <*> bssid <*>,5
+6246823d,Invalid Channel,2
 29ebe076,<*> Max Steer Cand reached <*>,1
-c2c60cf7,invalid radio_idx!,1
-5bef5bcf,- hexdump(len=<*>): <*> 0b 2a bf e9 c4 a3 <*> <*> <*> f6 de e1 <*> d4 a<*>,1
-e36c7057,- hexdump(len=<*>): <*> 0b 2a bf e9 c4 a3 <*> <*> <*> 7a <*> ea <*> <*> <*>,1
-62cb945c,"<*> cli (<*>) e2:a4:6c:fb:a3:<*> candidate bss for offloading is <*>:0b:2a:cf:e9:<*>: target score <*>, current score <*>, 11k rssi <*>, target rssi <*>, hop count <*>",3
-a82c6d7a,"btm_req_len=<*>, frame->u.btm_req: request_mode=0x07, disassociation_timer=<*>, validity_interval=<*>",3
-1f72368d,resend_message Client Steering Request to rax3 almac=<*>:0b:2a:bf:e9:<*> premid=<*> retry_cnt_left=<*>,1
-e395f307,- hexdump(len=<*>): <*> 0b 2a bf e9 <*> a3 <*> <*> <*> d0 <*> <*> f6 <*> <*>,1
-85fd8172,- hexdump(len=<*>): <*> 0b 2a bf e9 c4 a3 <*> <*> <*> e2 a4 6c fb a3 <*>,1
+dd427ec4,connected(<*>:0b:2a:ff:e9:<*>) n_iface(2e:0b:2a:f1:ba:<*>),3
+292b7a06,connected(2e:0b:2a:f1:ba:<*>) n_iface(<*>:0b:2a:ff:e9:<*>),4
+aab7825e,Info ID(<*>) is not ANQP query list and not ANQP vendor-specific query list,1
+72b140b8,!!agent info(<*>:0b:2a:f1:ba:<*>) not exist,2
+a7ea71eb,<*> requested BSS not available,1
+48e27a00,client_id is not valid!,39
+313c034e,dev avalible by almac(<*>:0b:2a:bf:e9:<*>),4
+99dcef35,connected(<*>:0b:2a:ff:e9:<*>) n_iface(2e:0b:2a:bf:e9:c5),1

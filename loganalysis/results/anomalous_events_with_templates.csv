@@ -1,14 +1,13 @@
 SessionId,EventSequence,Anomaly,EventId,EventTemplate
-10873,['42934e80'],1.0,42934e80,<*> Channel = <*> is OL
-10893,['2d662a75'],1.0,2d662a75,drop <*> <*> msgtype=0x<*>
-11010,['d5c1bbc9'],1.0,d5c1bbc9,insert assoc_client <*> in <*>
-11040,['25589ad0'],1.0,25589ad0,<*> Associated radio channel <*> is not overload yet
-11159,['3eb580e4'],1.0,3eb580e4,<*> Client(<*>) <*> Trigger = <*>
-12393,['b78a17b6'],1.0,b78a17b6,Client (<*>) <*> has been steered <*> <*>
-12475,['df18c1e5'],1.0,df18c1e5,parse_cmdu_message fail
-12683,['8bdb86ee'],1.0,8bdb86ee,cli (<*>) <*> join <*> BSS <*>
-13160,['55e56737'],1.0,55e56737,"<*> Build Steer Request to Agent <*> <*> <*> bss_cnt <*>, operating class=<*>, channel=<*>"
-13373,['d721f9a5'],1.0,d721f9a5,<*> Recv BTM Response STA: <*> Target: <*> status(<*>)
-14927,['409a28b1'],1.0,409a28b1,send_air_monitor_response_check Monitor Result For Ind <*> reference <*>
-15142,['b3e00c7f'],1.0,b3e00c7f,remove <*> in <*>
-15460,['53b8dc98'],1.0,53b8dc98,<*> client <*> <*> on <*> is a <*> candidate
+16212,['6d3c53ec'],1.0,6d3c53ec,<*> assoc cli <*> invalid ul rssi <*>
+16288,['1bcace46'],1.0,1bcace46,<*> client mac <*> info is null
+16316,['dd964694'],1.0,dd964694,write error
+16437,['18076c54'],1.0,18076c54,<*> no enough bss info for band=<*>! not add extra m2 now
+16866,['88597f1c'],1.0,88597f1c,"Input invalid estimate rate:<*>, uplink rate: <*>"
+17193,['60e69528'],1.0,60e69528,"Uinitialized radio, continuing"
+17500,['108ecbec'],1.0,108ecbec,topo server doesn't have <*> with <*>
+17955,['410d1073'],1.0,410d1073,Invalid trigger (<*>) CHAN_MEASUREMENT_COMPLETE
+18022,['30fc5842'],1.0,30fc5842,error tx link metrics tlv
+18380,['085a4b15'],1.0,085a4b15,<*> curr_dev is null
+18884,['bfafdea5'],1.0,bfafdea5,<*> **** No Alternative BSSs(overloaded bss / ESS mismatch / chan not supp ****
+19713,['13a0d736'],1.0,13a0d736,invalid almac(<*>:0b:2a:bf:e9:<*>)

@@ -22,40 +22,47 @@ cat: logmesh: input file is output file
 cat: messages: input file is output file
 ************* CHECK LOG **************
 Parsing file: ../data/input_log/logmesh
-Total lines:  15490
-Processed 6.5% of log lines.
-Processed 12.9% of log lines.
-Processed 19.4% of log lines.
-Processed 25.8% of log lines.
-Processed 32.3% of log lines.
-Processed 38.7% of log lines.
-Processed 45.2% of log lines.
-Processed 51.6% of log lines.
-Processed 58.1% of log lines.
-Processed 64.6% of log lines.
-Processed 71.0% of log lines.
-Processed 77.5% of log lines.
-Processed 83.9% of log lines.
-Processed 90.4% of log lines.
+Total lines:  22739
+Processed 4.4% of log lines.
+Processed 8.8% of log lines.
+Processed 13.2% of log lines.
+Processed 17.6% of log lines.
+Processed 22.0% of log lines.
+Processed 26.4% of log lines.
+Processed 30.8% of log lines.
+Processed 35.2% of log lines.
+Processed 39.6% of log lines.
+Processed 44.0% of log lines.
+Processed 48.4% of log lines.
+Processed 52.8% of log lines.
+Processed 57.2% of log lines.
+Processed 61.6% of log lines.
+Processed 66.0% of log lines.
+Processed 70.4% of log lines.
+Processed 74.8% of log lines.
+Processed 79.2% of log lines.
+Processed 83.6% of log lines.
+Processed 88.0% of log lines.
+Processed 92.4% of log lines.
 Processed 96.8% of log lines.
 Processed 100.0% of log lines.
-Parsing done. [Time taken: 0:00:03.002520]
+Parsing done. [Time taken: 0:00:03.455611]
 ************* ANALAYSIS LOG **************
 ====== Input data summary ======
 Loading ../data/result/logmesh_structured.csv
-Total: 15490 instances, train: 15490 instances, test: 0 instances
+Total: 22739 instances, train: 22739 instances, test: 0 instances
 ====== Transformed train data summary ======
-Train data shape: 10843-by-74
+Train data shape: 15917-by-122
 
 Train phase:
 ====== Model summary ======
-n_components: 40
-Project matrix shape: 74-by-74
-SPE threshold: 1.0009482371811964
+n_components: 81
+Project matrix shape: 122-by-122
+SPE threshold: 0.6844873464897163
 
 Test phase:
 ====== Transformed test data summary ======
-Test data shape: 4647-by-74
+Test data shape: 6822-by-122
 
 ************* VIEW RESULTS **************
 Warning: failed to launch javaldx - java may not function correctly
