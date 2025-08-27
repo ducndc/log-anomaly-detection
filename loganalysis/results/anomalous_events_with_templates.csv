@@ -1,13 +1,16 @@
 SessionId,EventSequence,Anomaly,EventId,EventTemplate
-16212,['6d3c53ec'],1.0,6d3c53ec,<*> assoc cli <*> invalid ul rssi <*>
-16288,['1bcace46'],1.0,1bcace46,<*> client mac <*> info is null
-16316,['dd964694'],1.0,dd964694,write error
-16437,['18076c54'],1.0,18076c54,<*> no enough bss info for band=<*>! not add extra m2 now
-16866,['88597f1c'],1.0,88597f1c,"Input invalid estimate rate:<*>, uplink rate: <*>"
-17193,['60e69528'],1.0,60e69528,"Uinitialized radio, continuing"
-17500,['108ecbec'],1.0,108ecbec,topo server doesn't have <*> with <*>
-17955,['410d1073'],1.0,410d1073,Invalid trigger (<*>) CHAN_MEASUREMENT_COMPLETE
-18022,['30fc5842'],1.0,30fc5842,error tx link metrics tlv
-18380,['085a4b15'],1.0,085a4b15,<*> curr_dev is null
-18884,['bfafdea5'],1.0,bfafdea5,<*> **** No Alternative BSSs(overloaded bss / ESS mismatch / chan not supp ****
-19713,['13a0d736'],1.0,13a0d736,invalid almac(<*>:0b:2a:bf:e9:<*>)
+16068,['24e524f6'],1.0,24e524f6,<*> mark <*> valid
+16418,['9f22278f'],1.0,9f22278f,failed to parse resp msg
+16461,['18076c54'],1.0,18076c54,<*> no enough bss info for band=<*>! not add extra m2 now
+16600,['f2f57324'],1.0,f2f57324,<*> for client <*> Candidate BSS is NULL
+16927,['4fea83fc'],1.0,4fea83fc,RSSI not valid (RSSI=<*>)
+17227,['0b056294'],1.0,0b056294,<*>(<*>): cli <*> ptk size <= <*>
+17309,['c4fd4295'],1.0,c4fd4295,due to new dev connect restart ch planning
+17398,['a26ff2b1'],1.0,a26ff2b1,failed to get interface
+17704,['bfafdea5'],1.0,bfafdea5,<*> **** No Alternative BSSs(overloaded bss / ESS mismatch / chan not supp ****
+18180,['6d3c53ec'],1.0,6d3c53ec,<*> assoc cli <*> invalid ul rssi <*>
+18721,['869ea45f'],1.0,869ea45f,Remove uplink_bh from: <*>
+19516,['88597f1c'],1.0,88597f1c,"Input invalid estimate rate:<*>, uplink rate: <*>"
+19541,['8d2b6ff2'],1.0,8d2b6ff2,No more room to accomodate <*> that has joined a BSS on another device
+19717,['4d8c1502'],1.0,4d8c1502,<*> reset on all radio
+20166,['9bcb57f5'],1.0,9bcb57f5,<*> bssid does not belongs to map

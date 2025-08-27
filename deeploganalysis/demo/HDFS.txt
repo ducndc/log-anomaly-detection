@@ -1,0 +1,1 @@
+20250826-173226 44558c88 ae dataset:HDFS	feature_type:sequentials f1-0.3256	rc-0.6140	pc-0.2215	acc-0.9087	converge-2.0000 train: 11.138 test: 1.354

@@ -1,0 +1,68 @@
+2025-08-26 17:31:16,720 P262574 INFO {
+    "model_name": "Autoencoder",
+    "hidden_size": 128,
+    "num_directions": 2,
+    "num_layers": 2,
+    "embedding_dim": 32,
+    "dataset": "HDFS",
+    "data_dir": "../data/processed/HDFS_100k/hdfs_0.0_tar",
+    "window_size": 10,
+    "stride": 1,
+    "feature_type": "sequentials",
+    "use_tfidf": false,
+    "max_token_len": 50,
+    "min_token_count": 1,
+    "epoches": 100,
+    "batch_size": 1024,
+    "learning_rate": 0.01,
+    "anomaly_ratio": 0.1,
+    "patience": 3,
+    "random_seed": 42,
+    "gpu": 0,
+    "cache": false,
+    "hash_id": "44558c88"
+}
+2025-08-26 17:31:16,942 P262574 INFO Load from ../data/processed/HDFS_100k/hdfs_0.0_tar
+2025-08-26 17:31:16,943 P262574 INFO {
+    "label_file": "../data/HDFS/anomaly_label.csv",
+    "log_file": "../data/HDFS/HDFS_100k.log_structured.csv",
+    "random_sessions": true,
+    "test_ratio": 0.2,
+    "train_anomaly_ratio": 0.0
+}
+2025-08-26 17:31:16,943 P262574 INFO # train sessions 6096 (0.00 anomalies)
+2025-08-26 17:31:16,943 P262574 INFO # test sessions 1588 (0.04 anomalies)
+2025-08-26 17:31:16,943 P262574 INFO Cannot load cached feature extractor.
+2025-08-26 17:31:16,947 P262574 INFO 14 tempaltes are found.
+2025-08-26 17:31:16,947 P262574 INFO Transforming train data.
+2025-08-26 17:31:16,968 P262574 INFO 26376 sliding windows generated.
+2025-08-26 17:31:17,021 P262574 INFO Finish feature extraction (train).
+2025-08-26 17:31:17,021 P262574 INFO Transforming test data.
+2025-08-26 17:31:17,022 P262574 INFO 2 new templates show while testing.
+2025-08-26 17:31:17,027 P262574 INFO 6724 sliding windows generated.
+2025-08-26 17:31:17,041 P262574 INFO Finish feature extraction (test).
+2025-08-26 17:31:17,445 P262574 INFO Start training on 26 batches with cpu.
+2025-08-26 17:31:34,476 P262574 INFO Epoch 1/100, training loss: 0.00107 [17.03s]
+2025-08-26 17:31:34,477 P262574 INFO Evaluating test data.
+2025-08-26 17:31:35,852 P262574 INFO Finish inference [1.38s]
+2025-08-26 17:31:36,035 P262574 INFO {'f1': '0.292', 'rc': '0.544', 'pc': '0.200', 'acc': '0.906'}
+2025-08-26 17:31:36,037 P262574 INFO Saving model to ./experiment_records/44558c88/model.ckpt
+2025-08-26 17:31:47,207 P262574 INFO Epoch 2/100, training loss: 0.00098 [11.14s]
+2025-08-26 17:31:47,207 P262574 INFO Evaluating test data.
+2025-08-26 17:31:48,563 P262574 INFO Finish inference [1.36s]
+2025-08-26 17:31:48,587 P262574 INFO {'f1': '0.326', 'rc': '0.614', 'pc': '0.222', 'acc': '0.909'}
+2025-08-26 17:31:48,587 P262574 INFO Saving model to ./experiment_records/44558c88/model.ckpt
+2025-08-26 17:31:59,665 P262574 INFO Epoch 3/100, training loss: 0.00114 [11.07s]
+2025-08-26 17:31:59,666 P262574 INFO Evaluating test data.
+2025-08-26 17:32:01,051 P262574 INFO Finish inference [1.39s]
+2025-08-26 17:32:01,087 P262574 INFO {'f1': '0.323', 'rc': '0.561', 'pc': '0.227', 'acc': '0.916'}
+2025-08-26 17:32:12,253 P262574 INFO Epoch 4/100, training loss: 0.00045 [11.17s]
+2025-08-26 17:32:12,253 P262574 INFO Evaluating test data.
+2025-08-26 17:32:13,616 P262574 INFO Finish inference [1.36s]
+2025-08-26 17:32:13,641 P262574 INFO {'f1': '0.315', 'rc': '0.596', 'pc': '0.214', 'acc': '0.907'}
+2025-08-26 17:32:24,779 P262574 INFO Epoch 5/100, training loss: 0.00036 [11.14s]
+2025-08-26 17:32:24,779 P262574 INFO Evaluating test data.
+2025-08-26 17:32:26,133 P262574 INFO Finish inference [1.35s]
+2025-08-26 17:32:26,157 P262574 INFO {'f1': '0.316', 'rc': '0.596', 'pc': '0.215', 'acc': '0.907'}
+2025-08-26 17:32:26,158 P262574 INFO Early stop at epoch: 5
+2025-08-26 17:32:26,158 P262574 INFO Loading model from ./experiment_records/44558c88/model.ckpt
