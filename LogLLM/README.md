@@ -121,24 +121,65 @@ pip install tqdm
 
 ### 4. Train our proposed deep model. This step can be skipped by directly using our fine-tuned model (ft_model_[dataset_name])
 
-- Set the following variations in **train.py**
+- Set the following variables in **train.py**, or override them with environment variables
+  (`BERT_PATH`, `LLAMA_PATH`, `DATASET_NAME`, `DATA_DIR`; Hugging Face hub IDs also work as model paths):
    ```
    Bert_path = # i.e., r"/mnt/public/gw/LLM_model/bert-base-uncased"
    Llama_path = # i.e., r"/mnt/public/gw/LLM_model/Meta-Llama-3-8B"
    dataset_name = # i.e., 'Liberty'
-   data_path =  # i.e., r'/mnt/public/gw/SyslogData/{dataset_name}/train.csv'.format(dataset_name)
+   data_dir =  # i.e., r'/mnt/public/gw/SyslogData/{dataset_name}'  (reads {data_dir}/train.csv)
    ```
+  `MIN_SAMPLES` (default 50000) sets how many samples are drawn per epoch in training phases 2-3.
 - Run ```python train.py``` from the root directory to get fine-tuned model.
 
 ### 5. Evaluate on test dataset.
 
-- Set the following variations in **eval.py**
-   ```
-   Bert_path = # i.e., r"/mnt/public/gw/LLM_model/bert-base-uncased"
-   Llama_path = # i.e., r"/mnt/public/gw/LLM_model/Meta-Llama-3-8B"
-   dataset_name = # i.e., 'Liberty'
-   data_path =  # i.e., r'/mnt/public/gw/SyslogData/{dataset_name}/test.csv'.format(dataset_name)
-   ```
+- Set the same variables in **eval.py** (or the same environment variables). It reads `{data_dir}/test.csv`.
 - We have provided the test file for the BGL and Liberty dataset, which can be accessed
   at [here (BGL test file)](https://drive.google.com/file/d/1aMKzhrLklnk5RX78UBc3Zx3voIIGnQzo/view?usp=sharing), and [here (Liberty test file)](https://drive.google.com/file/d/1-Z2FrsRSm8ojfOW1555obNyU6B_aRDTH/view?usp=sharing)
 - Run ```python eval.py``` from the root directory. 
+
+## Wi-Fi device logs
+
+This fork adds support for the EasyMesh `logmesh` / `messages` syslogs in `../data/input_log/`
+(format `<Day> <Month> <Date> <Time> <Year> <Level> <Component>: <Content>`).
+
+| File | Purpose |
+|---|---|
+| `prepareData/wifi_window.py` | Builds `../data/llm/Wifi/{train,test}.csv` and seeds `template_labels.csv` |
+| `run_wifi.sh` | Runs install, prep, train, and eval on a GPU machine |
+| `detect.py` | Runs a trained model on new, unlabeled logs |
+
+### Labels
+
+The device logs have no anomaly labels, so `wifi_window.py` assigns them per log template:
+
+1. Each line is reduced to a template by masking MACs, IPs, hex IDs, and words that contain digits.
+2. Labels are read from `../data/llm/Wifi/template_labels.csv` (`Template, Source, Level, Occurrences, Label, Reason`).
+   If the file does not exist, it is seeded with these heuristics:
+   - `Label=1` if the template contains a failure keyword (fail, error, timeout, invalid, refused, drop, ...) or the level is crit/alert/emerg.
+   - Keyword templates that make up ≥ 5% of their log are treated as background chatter: they get `Label=0` and a `REVIEW` reason.
+     For example, `invalid radio_idx!` is about 40% of `logmesh`.
+   - Severity alone is not used, because `mapd` logs almost everything at `daemon.err`.
+3. **Review the `Label` column by hand**, then rerun the script. Templates that are missing from the file are treated as normal.
+4. Each log is split 80/20 in time order into fixed windows of 20 lines with a step of 10. A window is anomalous if any line in it is.
+
+The model learns these labels, and `eval.py` scores against them. Precision and recall therefore measure agreement with
+`template_labels.csv`, not with real incidents.
+
+### Run
+
+```bash
+python prepareData/wifi_window.py      # locally; review template_labels.csv and rerun
+export HF_TOKEN=...                    # GPU machine, >= 24 GB VRAM, access to meta-llama/Meta-Llama-3-8B
+bash run_wifi.sh all                   # or one step: install | prep | train | eval
+DATASET_NAME=Wifi python detect.py /path/to/logmesh /path/to/messages
+```
+
+`run_wifi.sh` sets `DATASET_NAME=Wifi`, `DATA_DIR=../data/llm/Wifi`, `BERT_PATH=google-bert/bert-base-uncased`,
+`LLAMA_PATH=meta-llama/Meta-Llama-3-8B`, and `MIN_SAMPLES=10000`. Any of these can be overridden by exporting the variable first.
+The adapters are saved to `ft_model_Wifi/`.
+
+`detect.py` writes the windows predicted as anomalous to `detect_Wifi.csv`, with source file, line range, time range,
+and raw lines. Set `DETECT_OUT` to change the output path. Window size and step come from `wifi_window.py`, so detection
+uses the same windowing as training.

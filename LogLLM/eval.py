@@ -12,11 +12,12 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 max_content_len = 100
 max_seq_len = 128
 batch_size = 32
-dataset_name = 'Liberty'   # 'Thunderbird' 'HDFS_v1'  'BGL'  'Liberty‘
-data_path = r'/mnt/public/gw/SyslogData/{}/test.csv'.format(dataset_name)
+dataset_name = os.environ.get('DATASET_NAME', 'Liberty')   # 'Thunderbird' 'HDFS_v1'  'BGL'  'Liberty‘
+data_dir = os.environ.get('DATA_DIR', r'/mnt/public/gw/SyslogData/{}'.format(dataset_name))
+data_path = os.path.join(data_dir, 'test.csv')
 
-Bert_path = r"/mnt/public/gw/LLM_model/bert-base-uncased"
-Llama_path = r"/mnt/public/gw/LLM_model/Meta-Llama-3-8B"
+Bert_path = os.environ.get('BERT_PATH', r"/mnt/public/gw/LLM_model/bert-base-uncased")
+Llama_path = os.environ.get('LLAMA_PATH', r"/mnt/public/gw/LLM_model/Meta-Llama-3-8B")
 
 ROOT_DIR = Path(__file__).parent
 ft_path = os.path.join(ROOT_DIR, r"ft_model_{}".format(dataset_name))

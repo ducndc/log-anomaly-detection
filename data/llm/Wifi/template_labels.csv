@@ -1,0 +1,201 @@
+Template,Source,Level,Occurrences,Label,Reason
+[mapd]: [<*>] Invalid trigger (<*>) CHAN_MEASUREMENT_COMPLETE,logmesh,daemon.err,286,1,"keyword ""Invalid"""
+[mapd]: [<*>] [STEER_FSM]  **** No Alternative BSSs(overloaded bss / ESS mismatch / chan not supp ****,logmesh,daemon.err,286,1,"keyword ""mismatch"""
+"[mapd]: [<*>] Input invalid estimate <*>, uplink rate: <*>",logmesh,daemon.err,228,1,"keyword ""invalid"""
+[wappd]: [<*>] [map_send_assoc_cli_msg](<*>): cli <*> ptk size <= <*>,logmesh,daemon.alert,218,1,level daemon.alert
+obuspa: DM_PRIV_GetNodeFromPath: Path is invalid: <*>,messages,daemon.info,183,1,"keyword ""invalid"""
+dnsmasq: using only locally-known addresses for domain invalid,messages,daemon.info,181,1,"keyword ""invalid"""
+[mapd]: [<*>] invalid almac(<*>),logmesh,daemon.err,135,1,"keyword ""invalid"""
+dnsmasq: nameserver <*> refused to do a recursive query,messages,daemon.warn,119,1,"keyword ""refused"""
+[mapd]: [<*>] due to new dev connect restart ch planning,logmesh,daemon.err,74,1,"keyword ""restart"""
+dnsmasq-dhcp: DHCPNAK(br-lan) <*> <*> wrong address,messages,daemon.info,69,1,"keyword ""wrong"""
+[p1905]: [<*>] drop mid(<*>) aldev_mac(<*>) msgtype=<*>,logmesh,daemon.err,49,1,"keyword ""drop"""
+[mapd]: [<*>] error tx link metrics tlv,logmesh,daemon.err,38,1,"keyword ""error"""
+[mapd]: [<*>] failed to get interface,logmesh,daemon.err,28,1,"keyword ""failed"""
+dnsmasq-dhcp: DHCPNAK(br-lan) <*> <*> wrong network,messages,daemon.info,18,1,"keyword ""wrong"""
+"[mapd]: [<*>] receive msgtype(<*>), waitmsgtype(<*>) fail",logmesh,daemon.err,16,1,"keyword ""fail"""
+[wappd]: [<*>] [map_send_one_assoc_sta_msg](<*>): ptk size < <*>,logmesh,daemon.alert,16,1,level daemon.alert
+[mapd]: [<*>] inform local wifi APCLI join,logmesh,daemon.crit,14,1,level daemon.crit
+[mapd]: [<*>] wait for event <*> timeout,logmesh,daemon.err,14,1,"keyword ""timeout"""
+[mapd]: [<*>] error ap metrics tlv,logmesh,daemon.err,13,1,"keyword ""error"""
+[mapd]: [<*>] failed to parse resp msg,logmesh,daemon.err,13,1,"keyword ""failed"""
+[wappd]: [<*>] driver_wext_get_oid: oid=<*> len (<*>) failed,logmesh,daemon.alert,13,1,level daemon.alert
+[mapd]: [<*>] [STEER_FSM]  Invalid Trigger (<*>) BTM_FAILURE,logmesh,daemon.err,12,1,"keyword ""Invalid"""
+[p1905]: [<*>] [TOPO] timeout!!! no discovery in db; del rsp(<*>),logmesh,daemon.err,12,1,"keyword ""timeout"""
+[wappd]: [<*>] iapp> IOCTL <*> to wlan <*> failed!,logmesh,daemon.alert,12,1,level daemon.alert
+[mapd]: [<*>] inform local wifi APCLI left,logmesh,daemon.crit,9,1,level daemon.crit
+[p1905]: [<*>] parse_cmdu_message fail,logmesh,daemon.err,9,1,"keyword ""fail"""
+bbfdm: [<*>] Error reading <*>,messages,local1.err,9,1,"keyword ""Error"""
+[mapd]: [<*>] [TOPO] al_mac(<*>) not found in MAP dev list,logmesh,daemon.err,8,1,"keyword ""not found"""
+"[mapd]: [<*>] [CENT_STEER] Cannot accomadate Target Client <*> on BSS <*> <*> rssi <*> with Chan_util=<*>, EstAirTime=<*>, SafetyTh=<*>",logmesh,daemon.err,7,1,"keyword ""Cannot"""
+[wappd]: [<*>] driver_wext_set_oid: oid=<*> len (<*>) failed,logmesh,daemon.alert,6,1,level daemon.alert
+"[wappd]: [<*>] mbo_make_mbo_ie_for_btm no need to add, return.",logmesh,daemon.alert,6,1,level daemon.alert
+"[wappd]: [<*>] nr_peer_btm_query_action: query_len <*> , nrlist.CurrListNum <*>",logmesh,daemon.alert,6,1,level daemon.alert
+"[wappd]: [<*>] nr_peer_btm_query_action: query_reason <*> , suppose to be <*>",logmesh,daemon.alert,6,1,level daemon.alert
+[wappd]: [<*>] nr_peer_btm_query_action: unrecognized sub-element ID <*> ...,logmesh,daemon.alert,6,1,level daemon.alert
+[mapd]: [<*>] Not found sta <*> at bssid <*>,logmesh,daemon.err,5,1,"keyword ""Not found"""
+[mapd]: [<*>] invalid param dev null or dev->in_network (<*>)!!!,logmesh,daemon.err,5,1,"keyword ""invalid"""
+[wappd]: [<*>] hessid_len is not six,logmesh,daemon.alert,5,1,level daemon.alert
+"[wappd]: [<*>] set hidden_ssid: ifname = <*>, hidessid = <*>",logmesh,daemon.alert,5,1,level daemon.alert
+[wappd]: [<*>] wapp_set_interworking_enable,logmesh,daemon.alert,5,1,level daemon.alert
+[mapd]: [<*>] something wrong: not found assoc_client <*> at bss <*>,logmesh,daemon.err,4,1,"keyword ""wrong"""
+[wappd]: [<*>] Initial hotspot function retrun type error,logmesh,daemon.alert,3,1,level daemon.alert
+[wappd]: [<*>] get param(<*>) fail,logmesh,daemon.alert,3,1,level daemon.alert
+[wappd]: [<*>] get param(DfsSlaveEn) fail,logmesh,daemon.alert,3,1,level daemon.alert
+[wappd]: [<*>] get param(DppOnboardType) fail,logmesh,daemon.alert,3,1,level daemon.alert
+[wappd]: [<*>] get param(MaxStaAllowed) fail,logmesh,daemon.alert,3,1,level daemon.alert
+[wappd]: [<*>] write error,logmesh,daemon.alert,3,1,level daemon.alert
+[mapd]: [<*>] Invalid Channel,logmesh,daemon.err,2,1,"keyword ""Invalid"""
+[mapd]: [<*>] [STEER_FSM]  Invalid Trigger (<*>) CHAN_MEASUREMENT_COMPLETE,logmesh,daemon.err,2,1,"keyword ""Invalid"""
+[mapd]: [<*>] [wapp_wait_recv_parse_wapp_resp]wait for event timeout,logmesh,daemon.err,2,1,"keyword ""timeout"""
+[p1905]: [<*>] switch data not found by port index(<*>),logmesh,daemon.err,2,1,"keyword ""not found"""
+[wappd]: [<*>] hotspot_deinit,logmesh,daemon.alert,2,1,level daemon.alert
+[wappd]: [<*>] netlink: recvfrom failed: No buffer space available,logmesh,daemon.alert,2,1,level daemon.alert
+dnsmasq-dhcp: DHCPNAK(br-lan) <*> <*> wrong server-ID,messages,daemon.info,2,1,"keyword ""wrong"""
+[mapd]: [<*>] peer_radio not found corresponding to identifier,logmesh,daemon.err,1,1,"keyword ""not found"""
+"[p1905]: [<*>] Sanity Check Fail! Err Flag:(<*>), smac:(<*>), mtype:(<*>), mid:(<*>), tlv_total_len:(<*>)",logmesh,daemon.err,1,1,"keyword ""Fail"""
+"[p1905]: [<*>] notify <*> change recv buffer size msg fail, drop msg (<*>)",logmesh,daemon.err,1,1,"keyword ""fail"""
+[wappd]: [<*>] Info ID(<*>) is not ANQP query list and not ANQP vendor-specific query list,logmesh,daemon.alert,1,1,level daemon.alert
+[wappd]: [<*>] map_build_cac_cap <*>,logmesh,daemon.alert,1,1,level daemon.alert
+[wappd]: [<*>] mapd_get_channel_scan_capab_from_driver <*> <*>,logmesh,daemon.alert,1,1,level daemon.alert
+[mapd]: [<*>] invalid radio_idx!,logmesh,daemon.err,9302,0,"REVIEW: keyword ""invalid"" but frequent (41% of logmesh)"
+[mapd]: [<*>] [Steer] assoc cli (<*>) invalid ul rssi <*>,logmesh,daemon.err,6023,0,"REVIEW: keyword ""invalid"" but frequent (26% of logmesh)"
+dnsmasq-dhcp: not giving name <*> to the DHCP lease of <*> because the name exists in /tmp/hosts/<*> with address <*>,messages,daemon.warn,4568,0,
+[mapd]: [<*>] [CENT_STEER] client db entry for <*> not found,logmesh,daemon.err,2791,0,"REVIEW: keyword ""not found"" but frequent (12% of logmesh)"
+dnsmasq-dhcp: DHCPREQUEST(br-lan) <*> <*>,messages,daemon.info,2499,0,
+dnsmasq-dhcp: DHCPOFFER(br-lan) <*> <*>,messages,daemon.info,928,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> <*>,messages,daemon.info,909,0,
+dnsmasq-dhcp: DHCPDISCOVER(br-lan) <*>,messages,daemon.info,868,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> iPhone,messages,daemon.info,438,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*>,messages,daemon.info,435,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> Mac,messages,daemon.info,364,0,
+[mapd]: [<*>] [CENT_STEER] client mac (<*>) info is null,logmesh,daemon.err,357,0,
+"[mapd]: [<*>] cli <*> hasn't been updated: bssid <*>, current_chan <*>",logmesh,daemon.err,251,0,
+[p1905]: [<*>] [AUTO_CONFIG] no enough bss info for band=<*>! not add extra <*> now,logmesh,daemon.err,230,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> Watch,messages,daemon.info,193,0,
+[mapd]: [<*>] [CENT_STEER] curr_dev is null,logmesh,daemon.err,190,0,
+[mapd]: [<*>] insert sta(<*>) in bss(<*>),logmesh,daemon.err,190,0,
+kernel: [<*>],messages,kern.warn,187,0,
+obuspa: CheckPathProperties: Path (<*>) does not exist in the schema,messages,daemon.info,183,0,
+dnsmasq: using nameserver <*>#<*>,messages,daemon.info,182,0,
+dnsmasq: using only locally-known addresses for domain bind,messages,daemon.info,181,0,
+dnsmasq: using only locally-known addresses for domain lan,messages,daemon.info,181,0,
+dnsmasq: using only locally-known addresses for domain local,messages,daemon.info,180,0,
+dnsmasq: using only locally-known addresses for domain localhost,messages,daemon.info,180,0,
+dnsmasq: using only locally-known addresses for domain onion,messages,daemon.info,180,0,
+dnsmasq: using only locally-known addresses for domain test,messages,daemon.info,180,0,
+[mapd]: [<*>] [CH_PLANNING] reset on all radio,logmesh,daemon.err,150,0,
+[mapd]: [<*>] no pending task,logmesh,daemon.err,150,0,
+[mapd]: [<*>] [STEER_CHAN_MEAS]  client dev is NULL,logmesh,daemon.err,149,0,
+"kernel: [<*>] mscs up tuple is added for STA (<*>), <*>",messages,kern.debug,148,0,
+[mapd]: [<*>] [CENT_STEER]  for client (<*>) Candidate BSS is NULL,logmesh,daemon.err,132,0,
+"[mapd]: [<*>] Uinitialized radio, continuing",logmesh,daemon.err,124,0,
+[mapd]: [<*>] RSSI not valid (RSSI=<*>),logmesh,daemon.err,120,0,
+netifd: <*> (<*>): udhcpc: sending renew to <*>,messages,daemon.notice,92,0,
+udhcpc: sending renew to <*>,messages,daemon.err,92,0,
+dnsmasq-dhcp: read /etc/ethers - <*> addresses,messages,daemon.info,91,0,
+dnsmasq: read /etc/hosts - <*> addresses,messages,daemon.info,91,0,
+dnsmasq: read /tmp/hosts/<*> - <*> addresses,messages,daemon.info,91,0,
+dnsmasq: read /tmp/hosts/odhcpd - <*> addresses,messages,daemon.info,91,0,
+"dnsmasq-dhcp: DHCP, IP range <*> -- <*>, lease time <*>",messages,daemon.info,90,0,
+"dnsmasq-dhcp: DHCP, sockets bound exclusively to interface br-lan",messages,daemon.info,90,0,
+dnsmasq: Allowing <*>/<*> responses,messages,user.notice,90,0,
+dnsmasq: Connected to system UBus,messages,daemon.info,90,0,
+"dnsmasq: DNS rebinding protection is active, will discard upstream <*> responses!",messages,user.notice,90,0,
+dnsmasq: UBus support enabled: connected to system bus,messages,daemon.info,90,0,
+dnsmasq: compile time options: <*> GNU-getopt no-DBus UBus <*> no-IDN DHCP <*> no-Lua TFTP no-conntrack no-ipset no-auth no-cryptohash no-DNSSEC no-ID loop-detect inotify dumpfile,messages,daemon.info,90,0,
+dnsmasq: exiting on receipt of SIGTERM,messages,daemon.info,90,0,
+dnsmasq: reading /tmp/resolv.conf.d/resolv.conf.auto,messages,daemon.info,90,0,
+"dnsmasq: started, version <*> cachesize <*>",messages,daemon.info,90,0,
+"netifd: <*> (<*>): udhcpc: lease of <*> obtained, lease time <*>",messages,daemon.notice,90,0,
+"udhcpc: lease of <*> obtained, lease time <*>",messages,daemon.err,90,0,
+[mapd]: [<*>] [STEER_CHAN_MEAS] bssid does not belongs to map,logmesh,daemon.err,87,0,
+[mapd]: [<*>] BH Entry NULL,logmesh,daemon.err,70,0,
+[p1905]: [<*>] [TOPO] reset agent(<*>) config states,logmesh,daemon.err,67,0,
+"[mapd]: [<*>] [STEER_FSM]  No suitable BSS found, going to the idle state",logmesh,daemon.err,65,0,
+dnsmasq-dhcp: DHCPDISCOVER(br-lan) <*> <*>,messages,daemon.info,60,0,
+[p1905]: [<*>] [TOPO] mark dev(<*>) valid,logmesh,daemon.err,57,0,
+[p1905]: [<*>] config push to almac(<*>),logmesh,daemon.err,46,0,
+kernel: [<*>] br-lan: port <*>(<*>) received tcn bpdu,messages,kern.info,46,0,
+"kernel: [<*>] br-lan: topology change detected, propagating",messages,kern.info,46,0,
+[p1905]: [<*>] agent <*> not in topology; delete,logmesh,daemon.err,41,0,
+"[mapd]: [<*>] No more room to accomodate <*>, that has joined a BSS on another device",logmesh,daemon.err,39,0,
+[mapd]: [<*>] client_id is not valid!,logmesh,daemon.err,39,0,
+[mapd]: [<*>] topo server doesn't have (<*>) with neighbor(<*>),logmesh,daemon.err,38,0,
+dnsmasq-dhcp: Ignoring domain vttek.vn for DHCP host name <*>,messages,daemon.warn,37,0,
+[mapd]: [<*>] cli has already left current <*>,logmesh,daemon.err,31,0,
+[mapd]: [<*>] connected(<*>) n_iface(<*>),logmesh,daemon.err,31,0,
+[mapd]: [<*>] Auth Rej for client <*> not in DB,logmesh,daemon.err,30,0,
+[mapd]: [<*>] [STEER_CHAN_MEAS] own device is NULL,logmesh,daemon.err,30,0,
+[mapd]: [<*>] Remove uplink_bh from: <*>,logmesh,daemon.err,20,0,
+"[mapd]: [<*>] [NETOPT] iface->is_map_if=<*>, iface_radio->uplink_bh_present=<*>",logmesh,daemon.err,20,0,
+[p1905]: [<*>]  Wifi Radio not present on remote device,logmesh,daemon.err,20,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> Wluy,messages,daemon.info,18,0,
+[p1905]: [<*>] create operational bss(<*>)almac(<*>) ssid=<*>,logmesh,daemon.err,17,0,
+"[mapd]: [<*>] cli has already connect to target bssid, bs <*>",logmesh,daemon.err,15,0,
+dnsmasq-dhcp: DHCPINFORM(br-lan) <*> <*>,messages,daemon.info,15,0,
+[mapd]: [<*>] [CH_PLANNING] Channel <*> is present in operating list,logmesh,daemon.err,14,0,
+[mapd]: [<*>] [CH_PLANNING] remove radio from the list,logmesh,daemon.err,14,0,
+[p1905]: [<*>] [TOPO] [LIB_CLIENT_NOTIFICATION]tx multicast discovery on <*> for downstream MAP agent,logmesh,daemon.err,14,0,
+"[mapd]: [<*>] cont_radio_cnt <*>, dev_radio_cnt <*>",logmesh,daemon.err,13,0,
+[mapd]: [<*>] should have never happened,logmesh,daemon.err,13,0,
+[mapd]: [<*>] <*> al mac: (<*>),logmesh,daemon.err,12,0,
+[p1905]: [<*>] create operational bss(<*>)almac(<*>) ssid=VHT KEANGNAM,logmesh,daemon.err,12,0,
+[p1905]: [<*>] create operational bss(<*>)almac(<*>) ssid=VHT KEANGNAM <*>,logmesh,daemon.err,12,0,
+dnsmasq-dhcp: DHCPRELEASE(br-lan) <*> <*>,messages,daemon.info,12,0,
+[p1905]: [<*>] [TOPO] tx multicast discovery(<*>) with vs tlv on <*>,logmesh,daemon.err,10,0,
+"[p1905]: [<*>] receive new send tlv, replace old one(<*>)",logmesh,daemon.err,10,0,
+"[mapd]: [<*>] [Steer]  No suitable BSS found, cli (<*>)<*> going to the idle state",logmesh,daemon.err,9,0,
+"[mapd]: [<*>] [CH_PLANNING] create new radio <*>, parent device = <*>",logmesh,daemon.err,8,0,
+[mapd]: [<*>] target_bssid is <*>,logmesh,daemon.err,8,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> Hikaru-Tran,messages,daemon.info,8,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> Thoas-iPhone,messages,daemon.info,8,0,
+[mapd]: [<*>] radio mapping pending for CLI interface <*>,logmesh,daemon.err,7,0,
+[mapd]: [<*>] update sta(<*>) in bss(<*>),logmesh,daemon.err,7,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> Samsung,messages,daemon.info,6,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> iPad,messages,daemon.info,6,0,
+[mapd]: [<*>] IFace Radio is NULL,logmesh,daemon.err,5,0,
+"[mapd]: [<*>] Send Sta Cap Query message to device <*>, client <*>, bssid <*>",logmesh,daemon.err,5,0,
+[mapd]: [<*>] input len is less,logmesh,daemon.err,5,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> KhueLegionLaptop,messages,daemon.info,5,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> Quang,messages,daemon.info,5,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> cuongvn,messages,daemon.info,5,0,
+obuspa: ## inst [<*>] still exists in backend,messages,daemon.info,5,0,
+[mapd]: [<*>] dev avalible by almac(<*>),logmesh,daemon.err,4,0,
+"[p1905]: [<*>] [TOPO] root leaf not exist, could not update topology tree",logmesh,daemon.err,4,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> Rachels-Air,messages,daemon.info,4,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> Van-Anh-Vu,messages,daemon.info,4,0,
+dnsmasq-dhcp: DHCPNAK(br-lan) <*> <*> address in use,messages,daemon.info,4,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> Hiu,messages,daemon.info,3,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> Thanh,messages,daemon.info,3,0,
+[mapd]: [<*>] <*>,logmesh,daemon.err,2,0,
+[mapd]: [<*>] No associated client found,logmesh,daemon.err,2,0,
+[mapd]: [<*>] radio (<*>) orignal_bw(<*>) opclass(<*>) ch(<*>),logmesh,daemon.err,2,0,
+[p1905]: [<*>] [<*>;<*>[<*>][<*> to reg match,logmesh,daemon.err,2,0,
+[p1905]: [<*>] !!agent info(<*>) not exist,logmesh,daemon.err,2,0,
+[p1905]: [<*>] alloc <*> sock_buf <*>!,logmesh,daemon.err,2,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> Jolie,messages,daemon.info,2,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> QAHs-Air,messages,daemon.info,2,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> hieubv,messages,daemon.info,2,0,
+dnsmasq: possible DNS-rebind attack detected: www.dmv.org,messages,daemon.warn,2,0,
+kernel: [<*>] TCP: <*> Possible SYN flooding on port <*> Sending cookies.  Check SNMP counters.,messages,kern.info,2,0,
+kernel: [<*>] mscs config is already active for the STA (<*>),messages,kern.debug,2,0,
+[mapd]: [<*>] ------------->,logmesh,daemon.err,1,0,
+[mapd]: [<*>] Number of clients read from DB file =<*>,logmesh,daemon.err,1,0,
+[mapd]: [<*>] [CENT_STEER] Max Steer Cand reached <*>,logmesh,daemon.err,1,0,
+[mapd]: [<*>] [CENT_STEER] requested BSS not available,logmesh,daemon.err,1,0,
+[mapd]: [<*>] mapd_add_client_to_bss_assoc_list: Assoc for already associated,logmesh,daemon.err,1,0,
+[mapd]: [<*>] wlan_client <*> stale dis-connect event from (<*>),logmesh,daemon.err,1,0,
+[p1905]: [<*>] GTK rekey timer <*>,logmesh,daemon.err,1,0,
+"[p1905]: [<*>] [INFO] <*>, <*>, <*>",logmesh,daemon.err,1,0,
+[p1905]: [<*>] [TOPO] [neighbor detect]receive discovery(<*>) peer intf(<*>),logmesh,daemon.err,1,0,
+[p1905]: [<*>] br mac addr <*>,logmesh,daemon.err,1,0,
+[p1905]: [<*>] no CsignKey specified,logmesh,daemon.err,1,0,
+[p1905]: [<*>] no connector specified,logmesh,daemon.err,1,0,
+[p1905]: [<*>] no netAccessKey specified,logmesh,daemon.err,1,0,
+[p1905]: [<*>] use default cpu port(<*>),logmesh,daemon.err,1,0,
+dnsmasq-dhcp: DHCPACK(br-lan) <*> <*> BCT,messages,daemon.info,1,0,
+dnsmasq: possible DNS-rebind attack detected: cdn.hw.gcloudcs.com,messages,daemon.warn,1,0,
+kernel: [<*>]  Clear Wcid = <*> FragBuffer !!!!!,messages,kern.err,1,0,
+kernel: [<*>] <*> <*> OK!,messages,kern.debug,1,0,
+obuspa: GetParameterGroup: Get group callback did not provide a value for param <*>,messages,daemon.info,1,0,

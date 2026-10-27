@@ -14,7 +14,7 @@ n_epochs_1 = 1
 n_epochs_2_1 = 1
 n_epochs_2_2 = 1
 n_epochs_3 = 2
-dataset_name = 'Liberty'  # 'Thunderbird' 'HDFS_v1' 'BGL'   'Liberty'
+dataset_name = os.environ.get('DATASET_NAME', 'Liberty')  # 'Thunderbird' 'HDFS_v1' 'BGL'   'Liberty'
 batch_size = 16
 micro_batch_size = 4
 gradient_accumulation_steps = batch_size // micro_batch_size
@@ -27,12 +27,15 @@ lr_3 = 5e-5
 max_content_len = 100
 max_seq_len = 128
 
-data_path = r'/mnt/public/gw/SyslogData/{}/train.csv'.format(dataset_name)
+data_dir = os.environ.get('DATA_DIR', r'/mnt/public/gw/SyslogData/{}'.format(dataset_name))
+data_path = os.path.join(data_dir, 'train.csv')
 
 min_less_portion = 0.3
+# Samples drawn per epoch in phases 2-3 (BalancedSampler oversamples small datasets up to this).
+min_samples = int(os.environ.get('MIN_SAMPLES', 50000))
 
-Bert_path = r"/mnt/public/gw/LLM_model/bert-base-uncased"
-Llama_path = r"/mnt/public/gw/LLM_model/Meta-Llama-3-8B"
+Bert_path = os.environ.get('BERT_PATH', r"/mnt/public/gw/LLM_model/bert-base-uncased")
+Llama_path = os.environ.get('LLAMA_PATH', r"/mnt/public/gw/LLM_model/Meta-Llama-3-8B")
 
 ROOT_DIR = Path(__file__).parent
 ft_path = os.path.join(ROOT_DIR, r"ft_model_{}".format(dataset_name))
@@ -53,6 +56,7 @@ f'lr_3: {lr_3}\n'
 f'max_content_len: {max_content_len}\n'
 f'max_seq_len: {max_seq_len}\n'
 f'min_less_portion: {min_less_portion}\n'
+f'min_samples: {min_samples}\n'
 f'device: {device}')
 
 def print_number_of_trainable_model_parameters(model):
@@ -173,7 +177,7 @@ if __name__ == '__main__':
         dataset,
         batch_size=micro_batch_size,
         num_workers=4,
-        sampler=BalancedSampler(dataset, target_ratio=min_less_portion),
+        sampler=BalancedSampler(dataset, target_ratio=min_less_portion, min_samples=min_samples),
         collate_fn=collator,
         drop_last=True
     )
